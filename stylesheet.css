@@ -1,0 +1,76 @@
+/*
+Grid-Container
+*/
+/*
+.grid-container {
+    display:grid;
+    grid-template-areas:
+    'Header Header Header Header Header Header'
+    'Input Content Content Content Content Content'
+    'Table Chart Chart Content Content Content'
+    'Table Chart Chart Content Content Content'
+    'Content Content Content Content Content Content'
+    'Footer Footer Footer Footer Footer Footer';
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+  }
+*/
+.inputs 
+{   
+    display: block;
+    color:black;
+    font-size: 1rem;
+    text-align: left;
+    background-color: bisque;
+}
+.outputs 
+{   
+    display: block;
+    color:black;
+    font-size: 1rem;
+    text-align: left;
+    background-color: rgb(153, 133, 108);
+}
+.warning
+{
+    display: block;
+    color:red;
+    font-size: 2rem;
+    text-align:center;
+    background-color: black;
+}
+.table
+{   
+    display: block;
+    border: 1px solid black;
+}
+.buttons 
+{
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    border: 2px;
+    background-color: #e49b9b;
+  }
+.buttons:hover
+{
+    background-color: aquamarine;
+}
+/*
+element styles
+*/
+th
+{   
+    font-size:1rem;
+    border: 1px solid black;
+    background-color: rgb(231, 23, 199);
+    color:black
+}
+td{
+    text-align: center;
+    font-size:1rem;
+    border: 1px solid black;
+    background-color: rgb(209, 126, 197);
+    color:black
+}
