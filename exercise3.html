@@ -25,63 +25,70 @@
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                         </button>
+                    </div>
+                </nav>
             </div>
-        </div>
         <div class="row">
             <div id="leftSide"class="col-md-3">
                 <div class="row bg-danger">
                     <div id="inputs">
                         <div id="InputFile">
                             <label class="form-label" for="customFile">Upload</label>
-                            <input id="fileupload1" type ="file" onchange = "file_upload(this)">
+                            <input id="fileupload1" class="custom-file-input" type ="file" onchange = "file_upload(this)">
                         </div>
                         <div id="WarningFalseFileType">
                             <div id="warning1" style="display:none">
                                 <p class="fw-bold text-black bg-warning my-2">Please upload a valid filetype (json/geojson)</p>
                             </div>
                         </div>
-                        <div id="InputPoint" class="row">
-                            <div class="col-4">
-                                <label class="form-label">Longtitude: </label>
-                                <label class="form-label">Latitude: </label>
-                                <label class="form-label">Name: </label>
-                            </div>
-                            <div class="col-8">
-                                <input id="new_Point_lon" type="number" step="any">
-                                <input id="new_Point_lat" type="number" step="any">
-                                <input id="new_Point_name" type="text">
-                            </div>
-                            <button id="button_new_Point" class="buttons" >Submit</button>
-                            <button id="button_nearest_cities">calculate nearest cities</button>
+                        <div id="InputPoint" class="row my-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">Lat</span>
+                                </div>
+                                <input id="new_Point_lon" type="number" class="form-control" placeholder="0°">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Lon</span>
+                                </div>
+                                <input id="new_Point_lat" type="number" class="form-control" placeholder="0°">
+                              </div>
+                              <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Name</span>
+                                </div>
+                                <input id="new_Point_name" type="text" class="form-control" placeholder="City">
+                              </div>
+                            <button id="button_new_Point" class="btn btn-primary my-1">Submit</button>
+                            <button id="button_nearest_cities" class="btn btn-primary my-1">calculate nearest cities</button>
                         </div>
                     </div>
                 </div>
-                <div class="row bg bg-primary">
+                <div class="row bg-primary">
                     <div id="Tables">
                         <div>
-                            <table id="table1" class="table">
+                            <table id="table1" class="table table-dark">
                             </table> 
                         </div>
                     </div>
                 </div>
                 <div class="row bg-body">
                     <div id="charts">
-                        <button id="displayChart">Display Chart?</button>
+                        <button id="displayChart" class="btn btn-primary my-1">Display Chart?</button>
                         <!--chart.js -charts-->
                         <canvas id="chart1"></canvas>
                     </div> 
                 </div>
             </div>
             <div id="SomeContent" class="col-md-7 bg-success">
-                bigger Content
+                <p class="center">bigger Content</p>
             </div>
             <div id="rigthSide" class="col-md-2 bg-info">
-                Toolbars
+                smaller Content
             </div>
         </div>
         <div class="row">
-            <div id="footer" class="col-md-12 bg-dark">
-                footer
+            <div id="footer" class="col-md-12 bg-light">
+                Footer
             </div>
         </div>
     </div>
