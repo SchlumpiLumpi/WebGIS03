@@ -1,21 +1,3 @@
-/*
-Grid-Container
-*/
-/*
-.grid-container {
-    display:grid;
-    grid-template-areas:
-    'Header Header Header Header Header Header'
-    'Input Content Content Content Content Content'
-    'Table Chart Chart Content Content Content'
-    'Table Chart Chart Content Content Content'
-    'Content Content Content Content Content Content'
-    'Footer Footer Footer Footer Footer Footer';
-    gap: 10px;
-    background-color: white;
-    padding: 10px;
-  }
-*/
 .inputs 
 {   
     display: block;
