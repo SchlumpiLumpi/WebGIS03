@@ -19,14 +19,19 @@
                 </h1>
             </div>
             <div class="col-md-8 bg-primary">
-                <nav class="navbar">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Navbar</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="#">Option2</a>
+                        <a class="nav-item nav-link" href="#">Option3</a>
+                      </div>
                     </div>
-                </nav>
+                  </nav>
             </div>
         <div class="row">
             <div id="leftSide"class="col-md-3">
@@ -58,8 +63,10 @@
                                 </div>
                                 <input id="new_Point_name" type="text" class="form-control" placeholder="City">
                               </div>
-                            <button id="button_new_Point" class="btn btn-primary my-1">Submit</button>
-                            <button id="button_nearest_cities" class="btn btn-primary my-1">calculate nearest cities</button>
+
+                            <button id="button_new_Point" class="btn btn-primary btn-sm my-1">Submit</button>
+                            
+                            <button id="button_nearest_cities" class="btn btn-primary btn-sm my-1">calculate nearest cities</button>
                         </div>
                     </div>
                 </div>
